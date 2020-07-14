@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+</head>
+<body>
+      
+        <header style="background-color:blue; height:100px">
+            <h1>This is Layout page</h1>
+        </header>
+        <div>
+            @RenderBody()
+        </div>
+        <footer style="background-color:purple; height:100px">
+            <h1>This is footer</h1>
+        </footer>
+    <div>
+        Name-
+        @RenderSection("renderName",required:false)
+    </div>
+</body>
+</html>

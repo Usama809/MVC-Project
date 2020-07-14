@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-Strongly Type HTML Helper", "12-Strongly Type HTML Helper\12-Strongly Type HTML Helper.csproj", "{CFBAD52F-9E67-4F4E-823E-90E9C3B0F8AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFBAD52F-9E67-4F4E-823E-90E9C3B0F8AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFBAD52F-9E67-4F4E-823E-90E9C3B0F8AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFBAD52F-9E67-4F4E-823E-90E9C3B0F8AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFBAD52F-9E67-4F4E-823E-90E9C3B0F8AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

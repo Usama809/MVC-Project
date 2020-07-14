@@ -1,0 +1,32 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        
+    }
+    <div> 
+         @Html.ActionLink("Click me", "Index", new { Name="Usama"})
+    </div>
+    <br />
+    <div>
+        @{
+            string name = "Usama";
+        }
+        @Html.TextBox("Text Box 1",name,new{id ="CustomId", @class="myCustomClass",style="width:200px"})
+        <br />
+        <br />
+        @Html.CheckBox("checkbox1",true,new { })
+        <br />
+        <br />
+        @Html.Password("Password")
+      
+    </div>
+</body>
+</html>

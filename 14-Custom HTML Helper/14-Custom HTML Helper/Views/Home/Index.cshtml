@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @CustomeHelper.image("https://media.gettyimages.com/photos/wazir-khan-mosque-lahore-punjab-pakistan-picture-id637623678?s=612x612", "This is Custome Images")
+        <br />
+        <br />
+        <label>Second Image</label>
+        @Html.img("https://media.gettyimages.com/photos/wazir-khan-mosque-lahore-punjab-pakistan-picture-id637623678?s=612x612", "This is Custome Images")
+        <br />
+        <br />
+        <label>Third Image</label>
+        @Html.imgTag("https://media.gettyimages.com/photos/wazir-khan-mosque-lahore-punjab-pakistan-picture-id637623678?s=612x612", "This is Custome Images")
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿@using _12_Strongly_Type_HTML_Helper.Models
+@model Employee
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm("MYForm"))
+        {
+            @Html.TextBoxFor(x => x.Name)
+            <br />
+            <br />
+            @Html.TextBoxFor(x => x.Address)
+            <br />
+            <br />
+            @Html.CheckBoxFor(x => x.IsEmployee)
+    <br />
+    <br/>
+            <input type="submit" value="Press me"/>
+             
+        }
+        
+    </div>
+</body>
+</html>
