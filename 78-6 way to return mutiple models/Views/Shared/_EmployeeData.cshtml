@@ -1,0 +1,6 @@
+﻿@model  IEnumerable<_78_6_way_to_return_mutiple_models.Models.Employee>
+<h1>Employee--</h1>
+@foreach (var item in Model)
+{
+    <h1>@(item.Name + " " + item.Email)</h1>
+}

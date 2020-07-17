@@ -1,0 +1,85 @@
+﻿@*@using _78_6_way_to_return_mutiple_models.Models;*@
+@*@model IndexVM*@
+@*@model  dynamic*@
+@*@model  Tuple<List<Employee>, List<Student>, string>*@
+
+@{
+    ViewBag.Title = "Index";
+}
+@*//View Model
+    @foreach (var employee in Model.Employees)
+    {
+        <h1>@employee.Name</h1>
+    }
+    <hr />
+    <h2>Students....</h2>
+
+    @foreach (var student in Model.Students)
+    {
+        <h1>@student.Name</h1>
+
+    }*@
+
+@*//dynamic model*@
+
+@*<h1>@Model.Name</h1>
+    @foreach (var employee in Model.Employees)
+    {
+        <h1>@employee.Name</h1>
+    }
+
+    <hr />
+    <h2>Students---</h2>
+
+    @foreach (var student in Model.Students)
+    {
+        <h1>@student.Name</h1>
+    }*@
+
+@*//Tuples*@
+
+
+@*@foreach (var employee in Model.Item1)
+    {
+        <h1>@employee.Name</h1>
+    }
+    <hr />
+    <h2>Students---</h2>
+
+    @foreach (var student in Model.Item2)
+    {
+        <h1>@student.Name</h1>
+    }*@
+
+@*ViewBag*@
+
+@*@foreach (var employee in ViewBag.Employees)
+    {
+        <h1>@employee.Name</h1>
+    }
+    <hr />
+    <h2>Students---</h2>
+
+    @foreach (var student in ViewBag.Students)
+    {
+        <h1>@student.Name</h1>
+    }*@
+
+@*//ViewData*@
+@*@foreach (var employee in ViewData["Emploees"]as List<Employee>)
+{
+    <h1>@employee.Name</h1>
+}
+<hr />
+<h2>Students---</h2>
+
+@foreach (var student in ViewData["Students"]as List<Student>)
+{
+    <h1>@student.Email</h1>
+}*@
+
+@*//Partial View*@
+
+@{Html.RenderAction("Employee");}
+
+@{Html.RenderAction("Studnet");}
